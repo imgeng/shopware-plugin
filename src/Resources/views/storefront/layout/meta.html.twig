@@ -1,0 +1,18 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+ {% block layout_head_meta_tags %}
+     {{ parent() }}
+     {% block image_engine_cdn_meta_tag %}
+         {% set ImageEngineCdnDomain = config('ImageEngineCdn.config.cdnDomain') %}
+         {% if ImageEngineCdnDomain %}
+             <meta name="accept-ch"
+                   content="sec-ch-width=({{ ImageEngineCdnDomain }}), sec-ch-dpr=({{ ImageEngineCdnDomain }}),sec-ch-viewport-width=({{ ImageEngineCdnDomain}})">
+             <link rel="preconnect" href="{{ ImageEngineCdnDomain }}">
+         {% endif %}
+     {% endblock %}
+ {% endblock %}
+
+
+
+
+
