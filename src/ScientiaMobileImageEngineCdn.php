@@ -8,7 +8,7 @@ use Shopware\Core\Framework\Plugin\Context\DeactivateContext;
 use Shopware\Core\Framework\Plugin\Context\InstallContext;
 use Shopware\Core\Framework\Plugin\Context\UninstallContext;
 
-class ImageEngineCdn extends Plugin
+class ScientiaMobileImageEngineCdn extends Plugin
 {
     public function install(InstallContext $installContext): void
     {

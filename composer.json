@@ -1,7 +1,7 @@
 {
   "name": "imageengine/shopware-cdn",
   "description": "CDN for Shopware 6",
-  "version": "v1.1.0",
+  "version": "v1.0.0",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "authors": [
@@ -11,10 +11,10 @@
     }
   ],
   "require": {
-    "shopware/core": ">=6.2"
+    "shopware/core": "6.4.*"
   },
   "extra": {
-    "shopware-plugin-class": "ImageEngine\\Cdn\\ImageEngineCdn",
+    "shopware-plugin-class": "ImageEngine\\Cdn\\ScientiaMobileImageEngineCdn",
     "label": {
       "de-DE": "ImageEngine CDN",
       "en-GB": "ImageEngine CDN"
