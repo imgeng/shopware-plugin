@@ -38,6 +38,9 @@ Component.register('image-engine-settings-general', {
 
             return "https://control.imageengine.io/register/website/?website=" + homeUrl +
                 "&utm_source=Shopware-plugin-settigns&utm_medium=page&utm_term=shopware-imageengine&utm_campaign=shopware_plugin";
+        },
+        homeUrl() {
+            return location.origin;
         }
     },
 

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ImageEngine\Cdn\Subscriber;
+namespace ScientiaMobileImageEngine\Cdn\Subscriber;
 
 use Shopware\Core\Content\Media\{MediaEntity, MediaEvents};
 use Shopware\Core\Framework\DataAbstractionLayer\Event\EntityLoadedEvent;

@@ -1,5 +1,5 @@
 {
-  "name": "imageengine/shopware-cdn",
+  "name": "scientiamobile/imageengine-cdn",
   "description": "CDN for Shopware 6",
   "version": "v1.0.0",
   "type": "shopware-platform-plugin",
@@ -14,7 +14,7 @@
     "shopware/core": "6.4.*"
   },
   "extra": {
-    "shopware-plugin-class": "ImageEngine\\Cdn\\ScientiaMobileImageEngineCdn",
+    "shopware-plugin-class": "ScientiaMobileImageEngine\\Cdn\\ScientiaMobileImageEngineCdn",
     "label": {
       "de-DE": "ImageEngine CDN",
       "en-GB": "ImageEngine CDN"
@@ -34,7 +34,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ImageEngine\\Cdn\\": "src/"
+      "ScientiaMobileImageEngine\\Cdn\\": "src/"
     }
   }
 }

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ImageEngine\Cdn\Test;
+namespace ScientiaMobileImageEngine\Cdn\Test;
 
 use PHPUnit\Framework\TestCase;
 use Shopware\Core\Defaults;

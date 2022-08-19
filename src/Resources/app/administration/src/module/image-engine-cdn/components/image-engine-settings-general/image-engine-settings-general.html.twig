@@ -79,7 +79,8 @@
             {% block image_engine_settings_general_shop_domain %}
                 <sw-inherit-wrapper v-model="actualConfigData['ImageEngineCdn.config.shopDomain']"
                                     :inheritedValue="selectedSalesChannelId === null ? null : allConfigs['null']['ImageEngineCdn.config.shopDomain']"
-                                    :customInheritationCheckFunction="checkTextFieldInheritance">
+                                    :customInheritationCheckFunction="checkTextFieldInheritance"
+                                    class="hidden">
                     <template #content="props">
                         <sw-field
                                 :label="$tc('image-engine-cdn-settings.configs.shopDomain.label')"
@@ -87,7 +88,7 @@
                                 :placeholder="$tc('image-engine-cdn-settings.configs.shopDomain.placeholder')"
                                 type="url"
                                 :map-inheritance="props"
-                                :value="props.currentValue"
+                                :value="homeUrl"
                                 :disabled="props.isInherited"
                                 :error="shopDomainErrorState"
                                 required
