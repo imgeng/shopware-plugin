@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Manifest/Schema/manifest-1.0.xsd">
+    <meta>
+        <name>shopware-plugin</name>
+        <label>ImageEngine CDN</label>
+        <label lang="de-DE">ImageEngine CDN</label>
+        <description>CDN for Shopware 6 rewrites URLs for images to be served by the designated CDN.Improves site performance, reliability, and scalability by offloading the majority of traffic to a CDN</description>
+        <description lang="de-DE">CDN für Shopware 6 schreibt URLs für Bilder um, die von einem Content Delivery Network (CDN) bereitgestellt werden sollen. Verbessert die Leistung und Zuverlässigkeit der Website.</description>
+        <author>ImageEngine</author>
+        <copyright>ImageEngine</copyright>
+        <version>1.0.0</version>
+        <icon>src/Resources/config/plugin.png</icon>
+        <license>MIT</license>
+    </meta>
+</manifest>

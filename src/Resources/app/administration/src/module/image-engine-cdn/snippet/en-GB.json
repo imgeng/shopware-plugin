@@ -19,6 +19,10 @@
 				"label": "Shop-Domain",
 				"placeholder": "foo.com",
 				"helpText": "Enter the full name of your primary shop domain. This domain is required to generate your media URLS."
+			},
+			"activation": {
+				"title": "Activation settings",
+				"label": "Activate CDN for the current sales channel."
 			}
 		}
 	}
