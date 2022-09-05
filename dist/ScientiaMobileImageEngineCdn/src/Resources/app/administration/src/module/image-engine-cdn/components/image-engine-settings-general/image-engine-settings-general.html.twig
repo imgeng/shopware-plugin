@@ -1,6 +1,6 @@
 {% block image_engine_settings_general %}
     <div>
-        <sw-card title="Activation settings" class="image-engine-settings">
+        <sw-card :title="$tc('image-engine-cdn-settings.configs.activation.title')" class="image-engine-settings">
             {% block image_engine_settings_general_activation %}
                 <sw-inherit-wrapper
                         v-model="actualConfigData['ImageEngineCdn.config.isActive']"
@@ -9,7 +9,7 @@
                     <template #content="props">
                         <sw-switch-field name="ImageEngineCdn.config.isActive"
                                          :mapInheritance="props"
-                                         label="Activate CDN for the current sales channel."
+                                         :label="$tc('image-engine-cdn-settings.configs.activation.label')"
                                          :disabled="props.isInherited"
                                          :value="props.currentValue"
                                          :helpText="$tc('image-engine-cdn-settings.general.activation.helpText')"
@@ -31,11 +31,11 @@
                                       variant="success"
                                       appearance="notification"
                                       :closable="false">
-                                <p><a href="https://control.imageengine.io/" target="_blank">ImageEngine Control
+                                <p><a href="https://control.imageengine.io/" target="_blank" rel="noopener">ImageEngine Control
                                         Panel</a></p>
                                 <p>
                                     <a href="https://support.imageengine.io/?utm_source=shopware-plugin-settigns&utm_medium=page&utm_term=shopware-imageengine&utm_campaign=shopware-imageengine"
-                                       target="_blank">
+                                       target="_blank" rel="noopener">
                                         ImageEngine Documentation</a>
                                 </p>
                             </sw-alert>
@@ -47,14 +47,14 @@
                                 <div>
                                     <span>To obtain an ImageEngine Delivery Address:</span></br>
                                     <span>1.<a :href="originalUrl"
-                                               target="_blank">Sign up for an ImageEngine account</a></span></br>
+                                               target="_blank" rel="noopener">Sign up for an ImageEngine account</a></span></br>
                                     <span>2.Enter the assigned ImageEngine Delivery Address in the "ImageEngine Delivery
                                         Address"
                                         option
                                         below.</span></br>
                                     <span>See
                                         <a href="https://support.imageengine.io/hc/en-us/articles/360059238371-Quick-Start/?utm_source=shopware-plugin-settigns&utm_medium=page&utm_term=shopware-imageengine&utm_campaign=shopware-imageengine"
-                                           target="_blank">
+                                           target="_blank" rel="noopener">
                                             full documentation
                                         </a>.
                                     </span>
